@@ -1,0 +1,588 @@
+.account-breadcrumbs {
+  position: absolute;
+  top: 0;
+  padding-top: 10px;
+}
+
+span.account-active-page {
+  font-weight: 700;
+  color: #394150;
+}
+
+.account-breadcrumbs a {
+  color: #666666;
+}
+
+.account-breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.account-back-bg {
+  height: 50px;
+  display: none;
+  align-items: center;
+  background: rgba(4,111,246,0.1);
+}
+
+.account-back {
+  height: 50px;
+  display: none;
+  align-items: center;
+  margin-top: -50px;
+}
+
+.account-back a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+  color: #394150;
+  font-weight: 700;
+}
+.account-back a:before {
+  content: '';
+  height: 18px;
+  width: 16px;
+  display: block;
+  background: url('images/Caret.svg') no-repeat;
+  transform: rotate(180deg);
+  position: relative;
+  top: -2px;
+} 
+
+@media (max-width: 767px) {
+  .account-breadcrumbs {
+    display: none;
+  }
+  .woocommerce-orders .account-back-bg,
+  .woocommerce-edit-address .account-back-bg,
+  .woocommerce-payment-methods .account-back-bg,
+  .woocommerce-edit-account .account-back-bg,
+  .woocommerce-taxes .account-back-bg {
+    display: block;
+  }
+  .account-back {
+    display: flex;
+  }
+}
+
+.woocommerce-account .woocommerce {
+  display: flex;
+  gap: 37px;
+  width: 100%;
+  padding-top: 10px;
+}
+@media (max-width: 980px) {
+  .woocommerce-account .woocommerce {
+    flex-direction: column;
+    align-items: center;    
+  }
+
+  .MyAccount-navigation {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .woocommerce-account .woocommerce {
+    gap: 0;
+    padding-top: unset;
+  }
+
+  .woocommerce-account .container {
+    padding-top: 0 !important;
+  }
+}
+
+
+.woocommerce-account #left-area {
+  width: 100%;
+  padding-right: 0 !important;
+}
+
+#main-content .container:before,
+.woocommerce-account .woocommerce:before,
+.woocommerce-account .woocommerce:after {
+  display: none;
+}
+
+.welcome-message {
+  padding-bottom: 30px;
+  width: 100%;
+  border-bottom: 1px solid #E5E5E5;
+  margin-bottom: 30px;
+}
+
+.welcome-message.dashboard {
+  display: none;
+}
+
+@media (max-width: 980px) {
+  .welcome-message.dashboard {
+    border: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+  }
+}
+
+.user-welcome {
+  color: #394150;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.my-account-nav {
+  width: 21%;
+  border-right: 1px solid #E5E5E5;
+}
+@media (max-width: 980px) {
+  .my-account-nav {
+    display: none;
+  }
+}
+
+.account-nav-heading {
+  color: #394150;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content {
+  float: none;
+  width: 76%;
+}
+@media (max-width: 980px) {
+  .woocommerce-account .woocommerce-MyAccount-content {
+    width: 100%;
+  }
+}
+
+.account-heading {
+  color: #394150;
+  font-weight: 700;
+}
+.woocommerce-taxes .account-heading {
+  padding-bottom: 25px;
+}
+@media (max-width: 767px) {
+  .account-heading {
+    display: none;
+  }
+}
+
+section.main-account-nav,
+section.second-account-nav {
+  border-bottom: 1px solid #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+section.second-account-nav {
+  margin-top: 30px;
+}
+
+.woocommerce-account .MyAccount-navigation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  list-style-type: none !important;
+  padding: 0 0 30px !important;
+}
+
+.woocommerce-account .MyAccount-navigation ul li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.woocommerce-account .MyAccount-navigation ul li:before {
+  content: '';
+  display: block;
+  height: 15px;
+  width: 15px;
+}
+
+.MyAccount-navigation a {
+  color: #394150;
+  font-weight: 400;
+}
+
+section.third-account-nav {
+  margin-top: 30px;
+}
+
+.dashboard-card:before {
+  content: '';
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+
+.first-account-menu li:nth-child(1):before,
+.dashboard-card.orders:before {
+  background: url('images/orders.svg') no-repeat;
+}
+
+.first-account-menu li:nth-child(2):before,
+.dashboard-card.addresses:before {
+  background: url('images/Addresses.svg') no-repeat;
+}
+
+.first-account-menu li:nth-child(3):before,
+.dashboard-card.payments:before {
+  background: url('images/payment.svg') no-repeat;
+}
+
+.first-account-menu li:nth-child(4):before,
+.dashboard-card.details:before {
+  background: url('images/Account.svg') no-repeat;
+}
+
+.first-account-menu li:nth-child(5):before,
+.dashboard-card.taxes:before {
+  background: url('images/taxes.svg') no-repeat;
+}
+
+.second-account-menu li:nth-child(1):before,
+.dashboard-card.contact:before {
+  background: url('images/About.svg') no-repeat;
+}
+
+.second-account-menu li:nth-child(2):before {
+  background: url('images/FAQs.svg') no-repeat;
+}
+
+.third-account-menu li:nth-child(1):before {
+  background: url('images/Sign-out.svg') no-repeat;
+}
+
+.account-dashboard-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+a.dashboard-link {
+  width: 30%;
+}
+
+.dashboard-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  padding: 24px 14px;
+  text-align: center;
+  min-height: 250px;
+}
+@media (max-width: 1119px) {
+  a.dashboard-link {
+    width: 29%;
+  }
+}
+@media (max-width: 767px) {
+  a.dashboard-link {
+    width: 100%;
+  }
+}
+
+.dashboard-card.contact {
+  justify-content: center;
+}
+
+.dashboard-card-heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: #394150;
+}
+
+.dashboard-card-body {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+}
+
+.dashboard-card-link {
+  color: #046FF6;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.account-addresses {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.address-block,
+.order-block,
+.payment-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  padding: 20px;
+}
+@media (max-width: 767px) {
+  .address-block {
+    flex-direction: column;
+  }
+}
+
+.order-info {
+  display: flex;
+  color: #394150;
+}
+
+.order-date:after,
+.order-number:after {
+  content: '|';
+  margin: 0 5px;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .order-block {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .order-info {
+    flex-direction: column;
+  }
+
+  .order-date:after,
+  .order-number:after {
+    display: none;
+  }
+
+  .address-right {
+    display: flex;
+    gap: 4px;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.address-heading {
+  font-size: 20px;
+  color: #394150;
+  margin: 30px 0;
+}
+
+.password-heading {
+  font-size: 20px;
+  color: #394150;
+  margin: 20px 0 10px;
+}
+
+.address-names {
+  font-size: 14px;
+  color: #394150;
+}
+
+span.address-name {
+  font-weight: 700;
+}
+
+.address-location {
+  color: #394150;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.address-right a {
+  color: #394150;
+  text-decoration: underline;
+}
+
+.orders-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+}
+
+.order-date {
+  font-weight: 700;
+}
+
+.order-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.order-right {
+  color: #046FF6;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.account-btn {
+  border: 1px solid #046FF6;
+  border-radius: 4px;
+  color: #046FF6;
+  width: fit-content;
+  padding: 4px 15px;
+}
+
+.woocommerce a.button:after, 
+.woocommerce-page a.button:after {
+  top: -2px;
+}
+
+.add-payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  padding: 40px 5px;
+  gap: 20px;
+  width: 100%;
+  max-width: 275px;
+  margin: 20px 0;
+}
+
+@media (max-width: 767px) {
+  .add-payment {
+    max-width: 400px;
+  }
+}
+
+.add-payment-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+  line-height: 15px;
+  color: #394150;
+  justify-content: center;
+}
+
+.add-payment-info span {
+  width: 70%;
+}
+
+.add-payment-info:before {
+  content: '';
+  height: 24px;
+  width: 24px;
+  display: block;
+  background: url(images/payment.svg) no-repeat;
+}
+
+.payment-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media (max-width: 767px) {
+  .payment-block {
+    flex-direction: column;
+    align-items: unset;
+    gap: 15px;
+  }
+
+  form.woocommerce-EditAccountForm.edit-account,
+  .woocommerce-edit-address form {
+    margin-top: 30px;
+  }
+}
+
+.payment-type {
+  font-size: 16px;
+  font-weight: 700;
+  color: #394150;
+}
+
+.payment-action {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.payment-action a {
+  color: #394150;
+  text-decoration: underline;
+}
+
+a.account-link.default:after {
+  content: '|';
+  margin: 0 10px;
+}
+
+.edit-account button.woocommerce-Button.button.wp-element-button {
+  margin-top: 15px;
+}
+
+p#aftax_status_field,
+p#aftax_expire_date {
+  display: flex;
+  align-items: center;
+}
+
+#aftax_third_field small:before {
+  content: '|';
+  margin-right: 4px;
+}
+
+@media (max-width: 767px) {
+  p#aftax_status_field {
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  p#aftax_expire_date {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #aftax_third_field label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #aftax_third_field small:before {
+    display: none;
+  }
+}
+
+#aftax_expire_date label {
+  width: 200px;
+}
+
+p#aftax_third_field {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.woocommerce-taxes input.woocommerce-Button.button.wp-element-button {
+  padding: 0.3em 1em 0.3em 1em !important;
+  background-color: #157BFB !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  font-weight: 500 !important;
+  border-radius: 5px !important;
+  font-size: 16px !important;
+}

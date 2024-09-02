@@ -1,0 +1,28 @@
+.DS_Store
+*.nova
+*.code-workspace
+*.sql
+conf/
+logs/
+organize/
+
+# Ignore everything in the root except the 'wp-content' directory.
+
+app/public/*
+
+!app/public/wp-content/
+
+# Ignore everything in the 'wp-content' directory, except the 'mu-plugins', plugins', 'themes', and 'uploads' directories.
+
+app/public/wp-content/*
+
+!app/public/wp-content/themes/
+
+# Ignore everything in the 'themes' directory, except the themes you specify (see the commented-out example for a hint on how to do this).
+
+app/public/wp-content/themes/*
+
+# Themes
+
+!app/public/wp-content/themes/Divi/
+!app/public/wp-content/themes/Divi-Child/
